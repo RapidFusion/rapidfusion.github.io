@@ -1,19 +1,29 @@
 // Project data (dummy content for now)
 const projects = [
   {
-    title: "Project Alpha",
+    title: "Color Cargo",
     desc: "A physics-based platformer with dynamic level generation.",
-    img: "https://encrypted-tbn0.gstatic.com/images?			q=tbn:ANd9GcT_cuympapAi8189Y1f_61rRbyB7-oKNDOK2Q&s?text=Alpha"
+    img: "assets/image-colorcargo.webp?q=tbn:ANd9GcT_cuympapAi8189Y1f_61rRbyB7-oKNDOK2Q&s?text=Alpha"
   },
   {
-    title: "Project Beta",
+    title: "Epic StuntMan Run",
     desc: "Multiplayer top-down shooter built in Unity using Netcode.",
-    img: "https://media.gq-magazine.co.uk/photos/645b5c3c8223a5c3801b8b26/16:9/w_2560%2Cc_limit/100-best-games-hp-b.jpg?text=Beta"
+    img: "assets/image-stuntman.webp?text=Beta"
   },
   {
-    title: "Project Gamma",
+    title: "Fly Wheels",
     desc: "Experimental game loop mechanics in Unreal Engine 5.",
-    img: "https://via.placeholder.com/600x300?text=Gamma"
+    img: "assets/image-flywheels.webp?text=Gamma"
+  },
+  {
+    title: "Whip n Flip",
+    desc: "Experimental game loop mechanics in Unreal Engine 5.",
+    img: "assets/image-whipnflip.webp?text=Gamma"
+  },
+  {
+    title: "Whist Game",
+    desc: "Experimental game loop mechanics in Unreal Engine 5.",
+    img: "assets/image-whist.webp?text=Gamma"
   }
 ];
 
