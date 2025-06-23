@@ -2,12 +2,13 @@
 const projects = [
   {
     title: "Color Cargo",
-    desc: "A physics-based platformer with dynamic level generation.",
+    desc: "Cargo Puzzle is the ultimate blend of bus sorting games, and bus color match ! You have to match delivery boxes with the right cargo buses by their colors, a bus color sort experience. Perfect for fans of puzzle games and fun games, this game is all about strategy, speed, and precision.",
+	
     img: "assets/image-colorcargo.webp?q=tbn:ANd9GcT_cuympapAi8189Y1f_61rRbyB7-oKNDOK2Q&s?text=Alpha"
   },
   {
     title: "Epic StuntMan Run",
-    desc: "Multiplayer top-down shooter built in Unity using Netcode.",
+    desc: "Ready to test your speed, reflexes, and parkour run race skills? Jump into the ultimate 3D race where every second counts! Run, jump, swing, and climb through challenging tracks in this fun race filled with crazy obstacles course. This is not just any running game—it’s a high-energy epic race with fun challenges where only the fastest and smartest players make it to the finish line!",
     img: "assets/image-stuntman.webp?text=Beta"
   },
   {
@@ -17,12 +18,12 @@ const projects = [
   },
   {
     title: "Whip n Flip",
-    desc: "Experimental game loop mechanics in Unreal Engine 5.",
+    desc: "Be attentive, be alert, the ragdoll monsters and the brainrot are coming for you. Use different weapons to throw the rope at them, flip and smash them aside for your survival.",
     img: "assets/image-whipnflip.webp?text=Gamma"
   },
   {
     title: "Whist Game",
-    desc: "Experimental game loop mechanics in Unreal Engine 5.",
+    desc: "AlWest is an old card game full of fun, clubbing and passion governed by elaborate laws and rules. The AlWest game is one of the oldest and most famous card games in the world, from which it borrowed most of the card games currently prevalent, as it started in the eighteenth century to find its place in social events and a direct challenge between four players",
     img: "assets/image-whist.webp?text=Gamma"
   }
 ];
@@ -85,7 +86,7 @@ function showProject(index) {
     if (i < proj.desc.length) {
       desc.textContent += proj.desc.charAt(i);
       i++;
-      setTimeout(typeWriter, 20);
+      setTimeout(typeWriter, 5);
     }
   }
 
