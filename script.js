@@ -17,6 +17,23 @@ const projects = [
   }
 ];
 
+
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY;
+  const scrollHeight = document.body.scrollHeight;
+  const viewportHeight = window.innerHeight;
+
+  const nearBottom = scrollY + viewportHeight >= scrollHeight - 100;
+
+  if (nearBottom) {
+    document.body.classList.add('bg-bottom');
+  } else {
+    document.body.classList.remove('bg-bottom');
+  }
+});
+
+
+
 // Function to update project view
 function showProject(index) {
   const proj = projects[index];
