@@ -1,6 +1,12 @@
 // Project data (dummy content for now)
 const projects = [
   {
+    title: "Whist Game",
+    desc: "AlWest is an old card game full of fun, clubbing and passion governed by elaborate laws and rules. The AlWest game is one of the oldest and most famous card games in the world, from which it borrowed most of the card games currently prevalent, as it started in the eighteenth century to find its place in social events and a direct challenge between four players",
+    img: "assets/image-whist.webp?text=Gamma",
+    lnk: 'https://play.google.com/store/apps/details?id=com.whist.whistapp&hl=en-US'
+  },
+  {
     title: "Color Cargo",
     desc: "Cargo Puzzle is the ultimate blend of bus sorting games, and bus color match ! You have to match delivery boxes with the right cargo buses by their colors, a bus color sort experience. Perfect for fans of puzzle games and fun games, this game is all about strategy, speed, and precision.",
 	
@@ -15,7 +21,7 @@ const projects = [
   },
   {
     title: "Fly Wheels",
-    desc: "Experimental game loop mechanics in Unreal Engine 5.",
+    desc: "Experience the thrill of futuristic flying cars in this exciting world of flying car games that combines the best of car jumping games and flying car simulator ! Become the ultimate car race master as you drag, release, and watch your flying car soar through the skies. With simple controls and addictive gameplay like airplane games, this is the perfect mix of fun and challenge.",
     img: "assets/image-flywheels.webp?text=Gamma",
     lnk: 'https://play.google.com/store/apps/details?id=com.genigames.flying.car.jump.evolution&hl=en-US'
   },
@@ -24,13 +30,20 @@ const projects = [
     desc: "Be attentive, be alert, the ragdoll monsters and the brainrot are coming for you. Use different weapons to throw the rope at them, flip and smash them aside for your survival.",
     img: "assets/image-whipnflip.webp?text=Gamma",
     lnk: 'https://play.google.com/store/apps/details?id=com.genigames.hit.ragdoll.rope.knife.master&hl=en-US'
+  }, 
+  {
+    title: "Rescue Dash",
+    desc: "Plan smart, act fast — guide emergency vehicles to their destinations before time runs out. Draw optimal paths on busy roads, avoid collisions, and manage multiple routes under pressure. Every second counts in this strategic puzzle game where quick thinking and precision save the day.",
+    img: "assets/image-rescuedash.webp?text=Gamma",
+    lnk: 'https://drive.google.com/file/d/19UNLarrmMjKqfPmbGuMd1mR3nsI3DCxa/view?usp=drive_link'
   },
   {
-    title: "Whist Game",
-    desc: "AlWest is an old card game full of fun, clubbing and passion governed by elaborate laws and rules. The AlWest game is one of the oldest and most famous card games in the world, from which it borrowed most of the card games currently prevalent, as it started in the eighteenth century to find its place in social events and a direct challenge between four players",
-    img: "assets/image-whist.webp?text=Gamma",
-    lnk: 'https://play.google.com/store/apps/details?id=com.whist.whistapp&hl=en-US'
+    title: "Tower Tetris",
+    desc: "Plan smart, act fast — guide emergency vehicles to their destinations before time runs out. Draw optimal paths on busy roads, avoid collisions, and manage multiple routes under pressure. Every second counts in this strategic puzzle game where quick thinking and precision save the day.",
+    img: "assets/image-tetristower.jpg?text=Gamma",
+    lnk: 'https://drive.google.com/file/d/1RLi0dX_KDcrPt6HDwcL3PIksWsBq1d9R/view?usp=drive_link'
   }
+
 ];
 
 let ind = 0;
@@ -96,7 +109,7 @@ function showProject(index) {
     if (i < proj.desc.length) {
       desc.textContent += proj.desc.charAt(i);
       i++;
-      setTimeout(typeWriter, 5);
+      setTimeout(typeWriter, 1);
     }
   }
 
