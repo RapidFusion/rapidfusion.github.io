@@ -4,31 +4,36 @@ const projects = [
     title: "Color Cargo",
     desc: "Cargo Puzzle is the ultimate blend of bus sorting games, and bus color match ! You have to match delivery boxes with the right cargo buses by their colors, a bus color sort experience. Perfect for fans of puzzle games and fun games, this game is all about strategy, speed, and precision.",
 	
-    img: "assets/image-colorcargo.webp?q=tbn:ANd9GcT_cuympapAi8189Y1f_61rRbyB7-oKNDOK2Q&s?text=Alpha"
+    img: "assets/image-colorcargo.webp?q=tbn:ANd9GcT_cuympapAi8189Y1f_61rRbyB7-oKNDOK2Q&s?text=Alpha",
+    lnk: 'https://play.google.com/store/apps/details?id=com.genigames.delivery.color.match.puzzle&pcampaignid=web_share'
   },
   {
     title: "Epic StuntMan Run",
     desc: "Ready to test your speed, reflexes, and parkour run race skills? Jump into the ultimate 3D race where every second counts! Run, jump, swing, and climb through challenging tracks in this fun race filled with crazy obstacles course. This is not just any running game—it’s a high-energy epic race with fun challenges where only the fastest and smartest players make it to the finish line!",
-    img: "assets/image-stuntman.webp?text=Beta"
+    img: "assets/image-stuntman.webp?text=Beta",
+    lnk: 'https://play.google.com/store/apps/details?id=com.genigames.parkour.run.fun.race&pcampaignid=web_share'
   },
   {
     title: "Fly Wheels",
     desc: "Experimental game loop mechanics in Unreal Engine 5.",
-    img: "assets/image-flywheels.webp?text=Gamma"
+    img: "assets/image-flywheels.webp?text=Gamma",
+    lnk: 'https://play.google.com/store/apps/details?id=com.genigames.flying.car.jump.evolution&hl=en-US'
   },
   {
     title: "Whip n Flip",
     desc: "Be attentive, be alert, the ragdoll monsters and the brainrot are coming for you. Use different weapons to throw the rope at them, flip and smash them aside for your survival.",
-    img: "assets/image-whipnflip.webp?text=Gamma"
+    img: "assets/image-whipnflip.webp?text=Gamma",
+    lnk: 'https://play.google.com/store/apps/details?id=com.genigames.hit.ragdoll.rope.knife.master&hl=en-US'
   },
   {
     title: "Whist Game",
     desc: "AlWest is an old card game full of fun, clubbing and passion governed by elaborate laws and rules. The AlWest game is one of the oldest and most famous card games in the world, from which it borrowed most of the card games currently prevalent, as it started in the eighteenth century to find its place in social events and a direct challenge between four players",
-    img: "assets/image-whist.webp?text=Gamma"
+    img: "assets/image-whist.webp?text=Gamma",
+    lnk: 'https://play.google.com/store/apps/details?id=com.whist.whistapp&hl=en-US'
   }
 ];
 
-
+let ind = 0;
 
 
 
@@ -48,8 +53,10 @@ window.addEventListener('scroll', () => {
 
 
 
+
 // Function to update project view
 function showProject(index) {
+  ind = index;
   const proj = projects[index];
   const image = document.getElementById('projectImage');
   const title = document.getElementById('projectTitle');
@@ -97,3 +104,8 @@ function showProject(index) {
 }
 // Show first project by default when page loads
 showProject(0);
+
+function openLink() {
+    const proj = projects[ind];
+    window.open(proj.lnk, '_blank'); // Opens in new tab
+  }
