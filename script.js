@@ -29,6 +29,9 @@ const projects = [
 ];
 
 
+
+
+
 window.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
   const scrollHeight = document.body.scrollHeight;
